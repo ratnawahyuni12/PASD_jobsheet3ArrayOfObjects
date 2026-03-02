@@ -6,3 +6,6 @@ Jawaban: tidak harus. class yang akan dijadikan array of objects tidak wajib mem
 2. Apa yang dilakukan oleh kode program berikut?
 Mahasiswa[] arrayOfMahasiswa = new Mahasiswa[3];
 Jawaban: kode tersebut melakukan deklarasi sekaligus inisialisasi sebuah array bernama arrayOfObjects yang bertipe Mahasiswa dengan kapasitas 3 elemen. namun pada tahap ini, ketiga slot array masih bernilai null karena objek Mahasiswa belum diinstansiasi.
+3. 3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan konstruktur pada baris program berikut?
+arrayOfMahasiswa[0] = new Mahasiswa();
+Jawaban: class Mahasiswa tidak memiliki konstruktor yang tertulis secara eksplisit. namun Java secara otomatis menyediakan konstruktor default tanpa parameter apabila programmer tidak mendefinisikan konstruktor apapun. itulah mengapa new Mahasiswa() tetap bisa dipanggil meskipun konstruktor tidak ditulis secara manual di dalam class tersebut.
