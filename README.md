@@ -28,3 +28,38 @@ myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
 myArrayOfMahasiswa[0].kelas = "SIB-1E";
 myArrayOfMahasiswa[0].ipk = (float) 3.75;
 Jawaban: kode tersebut menyebabkan error NullPointerException karena ketika tertulis new Mahasiswa[3], Java hanya membuat array berisi 3 slot kosong (null). masing-masing elemen belum menunjuk ke objek Mahasiswa manapun. jadi saat mengakses myArrayOfMahasiswa[0].nim, program crash karena myArrayOfMahasiswa[0] masih bernilai null.
+
+3.4 —— Pertanyaan
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+Jawaban: iya, bisa. konsep ini disebut dengan constructor overloading. Java membedakan construktor berdasarkan jumlah dan tipe. contoh:
+
+public class Matakuliah {
+    public String kode;
+    public String nama;
+    public int sks;
+    public int jumlahJam;
+
+    // Constructor tanpa parameter
+    public Matakuliah() {
+        this.kode = "-";
+        this.nama = "-";
+        this.sks = 0;
+        this.jumlahJam = 0;
+    }
+
+    // Constructor dengan 2 parameter
+    public Matakuliah(String kode, String nama) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = 0;
+        this.jumlahJam = 0;
+    }
+
+    // Constructor dengan semua parameter
+    public Matakuliah(String kode, String nama, int sks, int jumlahJam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahJam = jumlahJam;
+    }
+}
