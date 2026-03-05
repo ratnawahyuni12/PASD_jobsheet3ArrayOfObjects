@@ -21,3 +21,10 @@ Jawaban: class Mahasiswa dan MahasiswaDemo dipisahkan karena keduanya memiliki t
 
 3.3 —— Pertanyaan
 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+Mahasiswa[] myArrayOfMahasiswa = new Mahasiswa[3];
+myArrayOfMahasiswa[0].nim = "244107060033";
+myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+myArrayOfMahasiswa[0].kelas = "SIB-1E";
+myArrayOfMahasiswa[0].ipk = (float) 3.75;
+Jawaban: kode tersebut menyebabkan error NullPointerException karena ketika tertulis new Mahasiswa[3], Java hanya membuat array berisi 3 slot kosong (null). masing-masing elemen belum menunjuk ke objek Mahasiswa manapun. jadi saat mengakses myArrayOfMahasiswa[0].nim, program crash karena myArrayOfMahasiswa[0] masih bernilai null.
