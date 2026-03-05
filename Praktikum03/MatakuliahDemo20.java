@@ -20,7 +20,8 @@ public class MatakuliahDemo20 {
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("------------------------------------");
 
-            arrayOfMatakuliah[i] = new Matakuliah20(kode, nama, sks, jumlahJam);
+            arrayOfMatakuliah[i] = new Matakuliah20();
+            arrayOfMatakuliah[i].tambahData(kode, nama, sks, jumlahJam);
         }
 
         for (int i = 0; i < 3; i++) {
