@@ -10,4 +10,14 @@ public class Matakuliah20 {
         this.sks = sks;
         this.jumlahJam = jumlahJam;
     }
+
+    public Matakuliah20() {
+    }
+
+    public void tambahData(String kode, String nama, int sks, int jumlahJam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahJam = jumlahJam;
+    }
 }
