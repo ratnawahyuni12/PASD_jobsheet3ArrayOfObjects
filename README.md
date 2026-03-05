@@ -18,3 +18,6 @@ arrayOfMahasiswa[0].ipk = (float) 3.75;
 Jawaban: kode tersebut menginstansiasi objek Mahasiswa baru pada index ke-0 dari array arrayOfMahasiswa, kemudian mengisi seluruh atributnya (nim, nama, kelas, ipk) dengan data yang sudah ditentukan. (float) pada baris terakhir adalah casting untuk memastikan nilai 3.75 tersimpan sebagai tipe data float.
 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
 Jawaban: class Mahasiswa dan MahasiswaDemo dipisahkan karena keduanya memiliki tanggung jawab yang berbeda. class Mahasiswa berperan sebagai blueprint/model yang hanya mendefinisikan atribut dari objek mahasiswa, sedangkan class MahasiswaDemo berperan sebagai class eksekutor yang bertugas menjalankan program seperti membuat objek, mengisi data, dan menampilkannya ke layar. pemisahan ini bertujuan agar kode lebih terstruktur, mudah dibaca, dan mudah dikembangkan sesuai prinsip OOP.
+
+3.3 —— Pertanyaan
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3
